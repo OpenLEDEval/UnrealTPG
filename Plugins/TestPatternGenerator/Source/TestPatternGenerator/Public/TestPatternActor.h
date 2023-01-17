@@ -6,8 +6,6 @@
 #include "GameFramework/Actor.h"
 #include "TestPatternActor.generated.h"
 
-class UPostProcessComponent;
-
 UCLASS(Blueprintable)
 class TESTPATTERNGENERATOR_API ATestPatternActor : public AActor
 {
@@ -17,13 +15,13 @@ public:
 	// Sets default values for this actor's properties
 	ATestPatternActor();
 
-	virtual void Tick(float DeltaTime) override;
 protected:
-
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
 
 	UPROPERTY(EditAnywhere, Category=TestPattern)
 	FLinearColor Color;
