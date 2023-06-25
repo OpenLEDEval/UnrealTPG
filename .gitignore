@@ -210,7 +210,7 @@ poetry.toml
 *.sdf
 *.VC.db
 *.VC.opendb
-.vs/*
+.vsconfig
 
 # Precompiled Assets
 SourceArt/**/*.png
