@@ -38,6 +38,7 @@ public class TestPatternGenerator : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
+                "Sockets",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

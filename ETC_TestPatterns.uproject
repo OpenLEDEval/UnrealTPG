@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.2",
+	"EngineAssociation": "{E04ABDAC-4A0F-8F2B-98EB-EF916E4A6877}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -17,6 +17,10 @@
 			"TargetAllowList": [
 				"Editor"
 			]
+		},
+		{
+			"Name": "ICVFX",
+			"Enabled": true
 		}
 	]
 }

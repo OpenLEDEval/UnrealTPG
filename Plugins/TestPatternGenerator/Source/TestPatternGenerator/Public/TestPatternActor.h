@@ -15,6 +15,8 @@ public:
 	// Sets default values for this actor's properties
 	ATestPatternActor();
 
+	virtual void OnConstruction(const FTransform& Transform) override;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -25,4 +27,7 @@ public:
 
 	UPROPERTY(EditAnywhere, Category=TestPattern)
 	FLinearColor Color;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=TestPattern)
+	FString MyIP;
 };

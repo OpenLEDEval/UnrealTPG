@@ -2,6 +2,8 @@
 
 
 #include "TestPatternActor.h"
+#include "SocketSubsystem.h"
+
 
 // Sets default values
 ATestPatternActor::ATestPatternActor()
@@ -9,6 +11,13 @@ ATestPatternActor::ATestPatternActor()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+}
+
+void ATestPatternActor::OnConstruction(const FTransform& Transform)
+{
+	bool bCanBindAll = true;
+	TSharedPtr<class FInternetAddr> Addr = ISocketSubsystem::Get(PLATFORM_SOCKETSUBSYSTEM)->GetLocalHostAddr(*GLog, bCanBindAll);
+	MyIP = Addr->ToString(false);
 }
 
 // Called when the game starts or when spawned
