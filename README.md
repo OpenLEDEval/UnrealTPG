@@ -1,6 +1,6 @@
 # ETC_TestPatterns
 
-This project was initially developed by [christiannng](https://github.com/christiannng) and [Josh Kerekes]([Josh Kerekes](https://github.com/joshkerekes)https://github.com/joshkerekes). It implements a very simple test pattern generator developed by ICVFX developers based on [Unreal Engine 5.2](https://www.unrealengine.com/en-US). The project uses multiple blueprints and the RemoteControl extension to open up a JSON api to control the output color of the game window. It has been validated on Windows 11 with NVIDIA Quadro P2000 (On a ThinkPad laptop) to accurate output 10bit RGB HDMI testpatterns. 
+This project was initially developed by [christiannng](https://github.com/christiannng) and [Josh Kerekes](https://github.com/joshkerekes). It implements a very simple test pattern generator developed by ICVFX developers based on [Unreal Engine 5.2](https://www.unrealengine.com/en-US). The project uses multiple blueprints and the RemoteControl extension to open up a JSON api to control the output color of the game window. It has been validated on Windows 11 with NVIDIA Quadro P2000 (On a ThinkPad laptop) to accurate output 10bit RGB HDMI testpatterns. 
 
 A few notes...
 1) The game is not configured to use HDR meaning that the back buffer of the output is determined by the desktop bit depth configured in NVIDIA desktop. _After connecting the LED processor HDMI input_, make the following changes:
