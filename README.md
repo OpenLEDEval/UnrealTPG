@@ -1,3 +1,5 @@
+!! This project has been superseded by [bmd-signal-gen](https://github.com/OpenLEDEval/bmd-signal-gen) and is archived here for reference purposes only. !!
+
 # UnrealTPG
 
 This project was initially developed by [christiannng](https://github.com/christiannng) and [Josh Kerekes](https://github.com/joshkerekes). It implements a very simple test pattern generator developed by ICVFX developers based on [Unreal Engine 5.2](https://www.unrealengine.com/en-US). The project uses multiple blueprints and the RemoteControl extension to open up a JSON api to control the output color of the game window. It has been validated on Windows 11 with NVIDIA Quadro P2000 (On a ThinkPad laptop) to accurate output 10bit RGB HDMI testpatterns. 
